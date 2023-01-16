@@ -8,9 +8,11 @@
     <title>Quick Fix</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/x-icon" href="./images/x-icon.png">
+    <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
@@ -182,19 +184,100 @@
                     </div>
                 </div>
             </div>
-
-
-
         </div>
 
 
 
 
+        <!-- Retailers -->
+        <div class="retailers">
+            <div class="product_title">
+                <h1>TRY PROFESSIONAL <br> EQUIPMENT</h1>
+                <h5>PERFORMANCE</h5>
+            </div>
+            <div class="retailers_container">
+                <div class="c_d_option">
+                    <ul id="accordion" class="accordion">
+                        <li>
+                            <div class="link">City<i class="fa fa-chevron-down"></i></div>
+                            <ul class="retailers_submenu">
+                                <li><a href="#">Dhaka</a></li>
+                                <li><a href="#">Sylhet</a></li>
+                                <li><a href="#">Chattogram</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="link">District<i class="fa fa-chevron-down"></i></div>
+                            <ul class="retailers_submenu">
+                                <li><a href="#">Feni</a></li>
+                                <li><a href="#">Comilla</a></li>
+                                <li><a href="#">Noakhali</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cus_container">
+                    <div class="cus_information "
+                        map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.8688621440306!2d90.4099219348877!3d23.858790000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c5d570268b39%3A0xf8db4a1101406613!2sMy%20Choice%20My%20One!5e0!3m2!1sen!2sbd!4v1672496893170!5m2!1sen!2sbd">
+                        <div class="all_cus_info">
+                            <img src="https://picsum.photos/200/200" alt="img">
+                            <div class="cus_address">
+                                <p>Mary J. Jones</p>
+                                <p>56 South Rockland St. Wantagh, NY 11793</p>
+                                <p>012345678912 / 01234565789</p>
+                            </div>
+                        </div>
+                        <div class="all_cus_info">
+                            <img src="https://picsum.photos/200/200" alt="img">
+                            <div class="cus_address">
+                                <p>Mary J. Jones</p>
+                                <p>56 South Rockland St. Wantagh, NY 11793</p>
+                                <p>012345678912 / 01234565789</p>
+                            </div>
+                        </div>
+                        <div class="all_cus_info">
+                            <img src="https://picsum.photos/200/200" alt="img">
+                            <div class="cus_address">
+                                <p>Mary J. Jones</p>
+                                <p>56 South Rockland St. Wantagh, NY 11793</p>
+                                <p>012345678912 / 01234565789</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cus_map">
+                        <div className="google_map">
+                            <iframe id="map"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.8688621440306!2d90.4099219348877!3d23.858790000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c5d570268b39%3A0xf8db4a1101406613!2sMy%20Choice%20My%20One!5e0!3m2!1sen!2sbd!4v1672496893170!5m2!1sen!2sbd"
+                                width="100%" height="450" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- aos -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
         </script>
+
+        <!-- jquery -->
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+            integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <!-- js -->
         <script src="./script.js"></script>
+
+        <script>
+            $('.cus_information').click(function () {
+                let map = $(this).attr('map');
+                $('#map').attr('src', map);
+            });
+        </script>
+
     </body>
 
 </html>
