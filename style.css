@@ -88,7 +88,6 @@ ul li {
   outline: none;
 }
 
-
 @media (max-width: 1200px) {
   .nav {
     padding: 0 5%;
@@ -560,8 +559,6 @@ ul li {
   }
 }
 
-
-
 /* pop-up-shape */
 .side_text {
   position: fixed;
@@ -578,62 +575,167 @@ ul li {
   margin-left: -2px;
 }
 
-
-
-
-
-
-
-
-
-.trigger{
+.trigger {
   text-align: center;
-color: #fff;
-font-size: 15px;
-outline: none;
-border: none;
-border-radius: 5px;
-font-family: cursive;
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-family: cursive;
 }
 
 .side_modal {
-position: fixed;
-left: 0;
-top: 0;
-width: 100%;
-height: 100%;
-background-color: rgba(0, 0, 0, 0.5);
-opacity: 0;
-visibility: hidden;
-transform: scale(1.1);
-z-index: 1;
-transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  z-index: 1;
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 }
 .side_modal-content {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-background-color: white;
-padding: 1rem 1.5rem;
-width: 24rem;
-border-radius: 0.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 24rem;
+  border-radius: 0.5rem;
 }
 .close-button {
-float: right;
-width: 1.5rem;
-line-height: 1.5rem;
-text-align: center;
-cursor: pointer;
-border-radius: 0.25rem;
-background-color: lightgray;
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
 }
 .close-button:hover {
-background-color: darkgray;
+  background-color: darkgray;
 }
 .side_show-modal {
-opacity: 1;
-visibility: visible;
-transform: scale(1.0);
-transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+/* contact us */
+.contact_us {
+  padding: 50px 0;
+}
+.quick_fix_map iframe {
+  width: 100%;
+  max-height: 500px;
+}
+.contact_info {
+  padding: 5% 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4rem;
+  background-color: #c0272c;
+}
+.contact_address {
+  display: grid;
+  gap: 4rem;
+}
+.contact_address_top {
+  display: grid;
+  gap: 0.5rem;
+}
+.contact_address_top h5 {
+  font-family: gidole;
+  letter-spacing: 10px;
+  color: #fff;
+  font-size: 16px;
+}
+.contact_address_top h1 {
+  font-family: american;
+  color: #222;
+  font-size: 55px;
+}
+.contact_address_top p {
+  font-family: gidole;
+  color: #fff;
+  line-height: 25px;
+  font-size: 17px;
+}
+.contact_address_bottom {
+  font-family: gidole;
+  color: #222;
+  display: grid;
+  gap: 1rem;
+}
+.contact_address_bottom div {
+  display: flex;
+  gap: 1rem;
+  color: #fff;
+}
+.contact_address_bottom div i {
+  color: #fff;
+  font-size: 20px;
+}
+
+.contact_mail {
+  display: grid;
+  gap: 2rem;
+}
+.contact_mail input,
+.contact_mail textarea {
+  border: none;
+  border-bottom: 2px solid #fff;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+  background-color: #c0272c;
+  padding: 10px;
+  color: #fff;
+}
+.contact_mail p {
+  font-family: gidole;
+  font-weight: 500;
+  color: #fff;
+}
+.contact_mail textarea {
+  height: 200px;
+}
+.contact_mail button {
+  display: block;
+  width: 200px;
+  padding: 15px 30px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  color: #222;
+  font-family: gidole;
+  font-weight: 600;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact_mail button:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  .contact_info {
+    padding: 5%;
+    grid-gap: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact_info {
+    grid-template-columns: 1fr;
+  }
+  .contact_address_top h1 {
+    font-size: 40px;
+  }
 }
