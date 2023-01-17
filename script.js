@@ -36,3 +36,25 @@ $(function () {
 
   var accordion = new Accordion($("#accordion"), false);
 });
+
+
+
+// pop-up-shape
+var modal = document.querySelector(".side_modal");
+var trigger = document.querySelector(".trigger");
+var closeButton = document.querySelector(".close-button");
+
+function toggleModal() {
+    modal.classList.toggle("side_show-modal");
+}
+
+function windowOnClick(event) {
+    if (event.target === modal) {
+        toggleModal();
+    }
+}
+
+trigger.addEventListener("click", toggleModal);
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);
+
