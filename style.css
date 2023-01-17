@@ -7,7 +7,9 @@
   font-family: gidole;
   src: url("./dafont/gidole/Gidole-Regular.ttf");
 }
-
+html{
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
