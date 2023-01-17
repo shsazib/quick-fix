@@ -14,6 +14,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -278,14 +281,23 @@
                         <h5>ADRENALINE</h5>
                         <h1>IMPROVE GENERAL
                             RIDEABILITY</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquet mi sapien, a malesuada tellus vehicula ac. Aliquam accumsan sapien sit amet lectus varius, vel lobortis urna tempus. Aliquam hendrerit felis eget ultrices tempus onec consequat mattis ullamcorper ut egestas idus risus.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquet mi sapien, a malesuada
+                            tellus vehicula ac. Aliquam accumsan sapien sit amet lectus varius, vel lobortis urna
+                            tempus. Aliquam hendrerit felis eget ultrices tempus onec consequat mattis ullamcorper ut
+                            egestas idus risus.</p>
                     </div>
                     <div class="contact_address_bottom">
                         <h3>OFFICE IN NEW YORK
                         </h3>
-                        <div><i class="fa-solid fa-location-dot"></i><p>7300-7398 Colonial Rd, Brooklyn, NY 11209, USA</p></div>
-                        <div><i class="fa-solid fa-phone"></i><p>+ (123) 124-567-8901</p></div>
-                        <div><i class="fa-solid fa-envelope"></i><p>carrier@qodeinteractive.com</p></div>
+                        <div><i class="fa-solid fa-location-dot"></i>
+                            <p>7300-7398 Colonial Rd, Brooklyn, NY 11209, USA</p>
+                        </div>
+                        <div><i class="fa-solid fa-phone"></i>
+                            <p>+ (123) 124-567-8901</p>
+                        </div>
+                        <div><i class="fa-solid fa-envelope"></i>
+                            <p>carrier@qodeinteractive.com</p>
+                        </div>
                     </div>
                 </div>
                 <div class="contact_mail">
@@ -308,40 +320,81 @@
 
 
 
+        <!-- about us -->
+
+        <div class="about_us">
+            <div class="product_title">
+                <h1>TRY PROFESSIONAL <br> EQUIPMENT</h1>
+                <h5>PERFORMANCE</h5>
+            </div>
+            <div class="about_container">
+                <!-- Swiper -->
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img
+                                src="./images/coders-discussing-about-source-code-compiling-discovers-errors-asks-rest-team-explanations-front-multiple-screens-running-algorithms-software-developers-doing-teamwork_482257-41856.webp"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="./images/contemporary-designers-looking-whiteboard-while-their-colleague-making-presentation_274679-20882.avif"
+                                alt=""></div>
+                        <div class="swiper-slide"><img src="./images/diverse-people-working-office_53876-104681.webp"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="./images/contemporary-designers-looking-whiteboard-while-their-colleague-making-presentation_274679-20882.avif"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="./images/female-business-owner-is-using-laptop_53876-48755.webp" alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="./images/coders-discussing-about-source-code-compiling-discovers-errors-asks-rest-team-explanations-front-multiple-screens-running-algorithms-software-developers-doing-teamwork_482257-41856.webp"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="./images/contemporary-designers-looking-whiteboard-while-their-colleague-making-presentation_274679-20882.avif"
+                                alt=""></div>
+                        <div class="swiper-slide"><img src="./images/diverse-people-working-office_53876-104681.webp"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="./images/contemporary-designers-looking-whiteboard-while-their-colleague-making-presentation_274679-20882.avif"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="./images/female-business-owner-is-using-laptop_53876-48755.webp" alt=""></div>
+                    </div>
+                </div>
+
+                <div class="about_text">
+                    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, Lorem ipsum dolor, sit amet
+                            consectetur adipisicing elit. Autem vel debitis molestias odit dolores nobis doloribus
+                            repellendus iusto, dignissimos eligendi officia sed illum totam incidunt esse eius quia
+                            aperiam adipisci? maiores alias illum necessitatibus obcaecati nisi excepturi temporibus
+                            ipsum ex sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem debitis eius
+                            praesentium necessitatibus animi eaque reiciendis repudiandae itaque laudantium non.</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, ipsa eius modi quibusdam
+                            vitae soluta laudantium eveniet vero beatae a officiis blanditiis quia neque possimus odio
+                            nesciunt voluptate, quis itaque maiores exercitationem labore eos illo! Sit asperiores ipsam
+                            ut ab?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
 
 
 
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                effect: "cards",
+                grabCursor: true,
+            });
+        </script>
         <!-- aos -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
