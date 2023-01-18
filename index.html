@@ -24,7 +24,7 @@
 
     <body>
         <nav class="nav">
-            <a href="#" class="brand_logo">
+            <a href="#home" class="brand_logo">
                 <img src="./images/Quickfix-Logo.png" alt="logo">
             </a>
             <input type="checkbox" id="check">
@@ -32,10 +32,10 @@
                 <i class="fas fa-bars"></i>
             </label>
             <ul class="nav_ul">
-                <li><a href="#home">Home</a></li>
+                <li><a href="#home" data-serialscrolling="home">Home</a></li>
                 <li><a href="#product">Product</a></li>
                 <li><a href="#retailers">Retailers</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" data-serialscrolling="contact">Contact</a></li>
                 <li><a href="#about">About Us</a></li>
             </ul>
         </nav>
@@ -264,7 +264,7 @@
 
 
         <!-- contact us -->
-        <div class="contact_us" id="contact">
+        <div class="contact_us" id="contact" data-serialscrolling-target="contact">
             <div class="product_title">
                 <h1>TRY PROFESSIONAL <br> EQUIPMENT</h1>
                 <h5>PERFORMANCE</h5>
@@ -435,6 +435,7 @@
         <script src="https://code.jquery.com/jquery-3.6.3.min.js"
             integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
         <!-- js -->
+
         <script src="./script.js"></script>
 
         <script>

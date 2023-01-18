@@ -37,24 +37,27 @@ $(function () {
   var accordion = new Accordion($("#accordion"), false);
 });
 
-
-
 // pop-up-shape
 var modal = document.querySelector(".side_modal");
 var trigger = document.querySelector(".trigger");
 var closeButton = document.querySelector(".close-button");
 
 function toggleModal() {
-    modal.classList.toggle("side_show-modal");
+  modal.classList.toggle("side_show-modal");
 }
 
 function windowOnClick(event) {
-    if (event.target === modal) {
-        toggleModal();
-    }
+  if (event.target === modal) {
+    toggleModal();
+  }
 }
 
 trigger.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
 
+$(".nav_ul a").click(function() {
+  let target = $(this).attr('href'), offsetTop = $(target).offset().top - 50;
+  if (target=='#home') offsetTop=0;
+  $([document.documentElement, document.body]).animate({ scrollTop: offsetTop }, 300);
+});
