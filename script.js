@@ -61,3 +61,11 @@ $(".nav_ul a").click(function() {
   if (target=='#home') offsetTop=0;
   $([document.documentElement, document.body]).animate({ scrollTop: offsetTop }, 300);
 });
+
+
+
+
+
+
+
+
