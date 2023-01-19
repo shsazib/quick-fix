@@ -14,12 +14,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* outline: 1px solid; */
 }
+
+
 a {
   text-decoration: none;
 }
 ul li {
   list-style: none;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100vw;
 }
 
 /* navbar */
@@ -35,6 +43,7 @@ ul li {
   position: sticky;
   top: 0;
   z-index: 99;
+  max-width: 100%;
 }
 .brand_logo img {
   height: 70px;
@@ -226,6 +235,8 @@ ul li {
 @media (max-width: 992px) {
   .hero_content {
     width: 90%;
+    /* padding-top: 50px; */
+    /* margin: 100px auto 50px auto; */
   }
 }
 @media (max-width: 768px) {
