@@ -56,16 +56,12 @@ trigger.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
 
-$(".nav_ul a").click(function() {
-  let target = $(this).attr('href'), offsetTop = $(target).offset().top - 50;
-  if (target=='#home') offsetTop=0;
-  $([document.documentElement, document.body]).animate({ scrollTop: offsetTop }, 300);
+$(".nav_ul a").click(function () {
+  let target = $(this).attr("href"),
+    offsetTop = $(target).offset().top - 50;
+  if (target == "#home") offsetTop = 0;
+  $([document.documentElement, document.body]).animate(
+    { scrollTop: offsetTop },
+    300
+  );
 });
-
-
-
-
-
-
-
-

@@ -14,9 +14,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -32,10 +29,10 @@
                 <i class="fas fa-bars"></i>
             </label>
             <ul class="nav_ul">
-                <li><a href="#home" data-serialscrolling="home">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#product">Product</a></li>
                 <li><a href="#retailers">Retailers</a></li>
-                <li><a href="#contact" data-serialscrolling="contact">Contact</a></li>
+                <li><a href="#review">Review</a></li>
                 <li><a href="#about">About Us</a></li>
             </ul>
         </nav>
@@ -279,7 +276,8 @@
                                     <p class="product_bought">Products you have bought </p>
                                     <div class="claim_all_product">
                                         <div class="claim_single_product">
-                                            <img src="./images/female-business-owner-is-using-laptop_53876-48755.webp" alt="">
+                                            <img src="./images/female-business-owner-is-using-laptop_53876-48755.webp"
+                                                alt="">
                                             <div>
                                                 <p>Product ID</p>
                                                 <p>xyzxxyzxyzyzxyzxyzxy</p>
@@ -292,7 +290,8 @@
                                             <a href="./warranty-form.html" class="warranty_claim">CLAIM</a>
                                         </div>
                                         <div class="claim_single_product">
-                                            <img src="./images/female-business-owner-is-using-laptop_53876-48755.webp" alt="">
+                                            <img src="./images/female-business-owner-is-using-laptop_53876-48755.webp"
+                                                alt="">
                                             <div>
                                                 <p>Product ID</p>
                                                 <p>xyzxxyzxyzyzxyzxyzxy</p>
@@ -304,7 +303,9 @@
                                             </div>
                                             <a href="#" class="warranty_claim">CLAIM</a>
                                         </div>
-                                        <div class="claim_single_product">                                            <img src="./images/female-business-owner-is-using-laptop_53876-48755.webp" alt="">
+                                        <div class="claim_single_product"> <img
+                                                src="./images/female-business-owner-is-using-laptop_53876-48755.webp"
+                                                alt="">
                                             <div>
                                                 <p>Product ID</p>
                                                 <p>xyzxxyzxyzyzxyzxyzxy</p>
@@ -326,8 +327,77 @@
         </section>
 
 
-       
 
+        <div class="review" id="review">
+            <div class="product_title">
+                <h1>TRY PROFESSIONAL <br> EQUIPMENT</h1>
+                <h5>PERFORMANCE</h5>
+            </div>
+            <div class="review_container">
+                <div class="review_input">
+                    <div class="review_name">
+                        <p>Name: </p>
+                        <input type="text" placeholder="Your Name:">
+                    </div>
+                    <div class="review_email">
+                        <p>Email: </p>
+                        <input type="email:=" placeholder="Your Email:">
+                    </div>
+                    <div class="review_comment">
+                        <p>Your Review:</p>
+                        <textarea placeholder="Comment:"></textarea>
+                    </div>
+                    <div class="review_rating">
+                        <p>Your Rating:</p>
+                        <select name="" id="">
+                            <option value="">⭐⭐⭐⭐⭐</option>
+                            <option value="">⭐⭐⭐⭐</option>
+                            <option value="">⭐⭐⭐</option>
+                            <option value="">⭐⭐</option>
+                            <option value="">⭐</option>
+                        </select>
+                    </div>
+                    <div class="save_rev">
+                        <input type="checkbox" id="checkbox">
+                        <label for="checkbox">Save my name, email, and website in this browser for the next time I
+                            comment.</label>
+                    </div>
+                    <div class="review_btn">
+                        <button>Add Review</button>
+                    </div>
+                </div>
+                <div class="all_reviews">
+                    <div class="single_review">
+                        <h2>Md Sazib</h2>
+                        <div>⭐⭐⭐⭐⭐</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, inventore? Lorem ipsum dolor sit,
+                            amet consectetur adipisicing elit. Consequuntur, ab reprehenderit libero deserunt provident
+                            magnam in repellat, deleniti eos dignissimos tempora eveniet illum eius distinctio officiis
+                            unde cum veniam odit officia quod, quae quisquam!</p>
+                    </div>
+                    <div class="single_review">
+                        <h2>Md Sazib</h2>
+                        <div>⭐⭐⭐⭐⭐</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, inventore?</p>
+                    </div>
+                    <div class="single_review">
+                        <h2>Md Sazib</h2>
+                        <div>⭐⭐⭐⭐⭐</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, inventore?</p>
+                    </div>
+                    <div class="single_review">
+                        <h2>Md Sazib</h2>
+                        <div>⭐⭐⭐⭐⭐</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, inventore?</p>
+                    </div>
+                    <div class="single_review">
+                        <h2>Md Sazib</h2>
+                        <div>⭐⭐⭐⭐⭐</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, inventore?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
         <!-- about us -->
@@ -338,38 +408,10 @@
                 <h5>PERFORMANCE</h5>
             </div>
             <div class="about_container">
-                <!-- Swiper -->
 
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img
-                                src="./images/coders-discussing-about-source-code-compiling-discovers-errors-asks-rest-team-explanations-front-multiple-screens-running-algorithms-software-developers-doing-teamwork_482257-41856.webp"
-                                alt=""></div>
-                        <div class="swiper-slide"><img
-                                src="./images/contemporary-designers-looking-whiteboard-while-their-colleague-making-presentation_274679-20882.avif"
-                                alt=""></div>
-                        <div class="swiper-slide"><img src="./images/diverse-people-working-office_53876-104681.webp"
-                                alt=""></div>
-                        <div class="swiper-slide"><img
-                                src="./images/contemporary-designers-looking-whiteboard-while-their-colleague-making-presentation_274679-20882.avif"
-                                alt=""></div>
-                        <div class="swiper-slide"><img
-                                src="./images/female-business-owner-is-using-laptop_53876-48755.webp" alt=""></div>
-                        <div class="swiper-slide"><img
-                                src="./images/coders-discussing-about-source-code-compiling-discovers-errors-asks-rest-team-explanations-front-multiple-screens-running-algorithms-software-developers-doing-teamwork_482257-41856.webp"
-                                alt=""></div>
-                        <div class="swiper-slide"><img
-                                src="./images/contemporary-designers-looking-whiteboard-while-their-colleague-making-presentation_274679-20882.avif"
-                                alt=""></div>
-                        <div class="swiper-slide"><img src="./images/diverse-people-working-office_53876-104681.webp"
-                                alt=""></div>
-                        <div class="swiper-slide"><img
-                                src="./images/contemporary-designers-looking-whiteboard-while-their-colleague-making-presentation_274679-20882.avif"
-                                alt=""></div>
-                        <div class="swiper-slide"><img
-                                src="./images/female-business-owner-is-using-laptop_53876-48755.webp" alt=""></div>
-                    </div>
-                </div>
+                <img class="about_container_img"
+                    src="./images/coders-discussing-about-source-code-compiling-discovers-errors-asks-rest-team-explanations-front-multiple-screens-running-algorithms-software-developers-doing-teamwork_482257-41856.webp"
+                    alt="">
 
                 <div class="about_text">
                     <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
@@ -395,7 +437,9 @@
         <div class="footer_container">
             <div class="footer_about">
                 <img src="./images/Quickfix-Logo.png" alt="">
-                <a href="./contact-us.html"><p>Contact Us</p></a>
+                <a href="./contact-us.html">
+                    <p>Contact Us</p>
+                </a>
                 <a href="#">Warranty Policy</a>
                 <a href="#">Privacy Policy</a>
                 <a href="#">Career</a>
@@ -422,16 +466,7 @@
         </div>
 
 
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-        <!-- Initialize Swiper -->
-        <script>
-            var swiper = new Swiper(".mySwiper", {
-                effect: "cards",
-                grabCursor: true,
-            });
-        </script>
         <!-- aos -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
