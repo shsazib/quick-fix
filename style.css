@@ -7,9 +7,6 @@
   font-family: gidole;
   src: url("./dafont/gidole/Gidole-Regular.ttf");
 }
-/* html{
-  scroll-behavior: smooth;
-} */
 * {
   margin: 0;
   padding: 0;
@@ -1262,108 +1259,66 @@ tr:nth-child(even) {
 /* review */
 
 .review {
-  background-color: #dee6e9;
-  padding: 5% 10%;
   font-family: gidole;
+  margin: 5% 0;
 }
 .review_container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  background-image: url('./images/testimonial.jpg');
+  background-size: contain;
+    background-attachment: fixed;
+    background-size: 100%;
+    padding: 5% 30%;
 }
-.review_input {
-  display: grid;
-  gap: 2rem;
+.review_container h1{
+  text-align: center;
+  margin-bottom: 50px;
+ font-size: 40px;
+ color: #fff; 
+ font-family: Arial, Helvetica, sans-serif;
+ 
 }
-.review_email,
-.review_name,
-.review_comment,
-.review_rating {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
+.review_container h1 hr{
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 10px; 
 }
-.save_rev {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+.swiper-slide{
+  background-color: transparent !important;
+  display: grid !important;
+  justify-items: center;
+  gap: 1.5rem;
   user-select: none;
-}
-.review_email input,
-.review_name input {
-  padding: 10px;
-  border: none;
-  outline: none;
-}
-.review_comment textarea {
-  border: none;
-  outline: none;
-  height: 150px;
-  padding: 10px;
-}
-.review_rating select {
-  border: none;
-  outline: none;
-  padding: 10px;
-  width: 50%;
-}
-.review_btn button {
-  border: none;
-  outline: none;
-  padding: 10px 30px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  background-color: #000;
   color: #fff;
-  cursor: pointer;
-  transition: 0.4s;
 }
-.review_btn button:active {
-  transform: scale(0.8);
+.swiper-slide img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
 }
-.all_reviews {
-  display: grid;
-  width: 100%;
-  height: 400px;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  background-color: #fff;
-}
-.single_review {
-  height: auto;
-  margin: 10px;
-  background-color: #dee6e9;
-  padding: 10px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  border-radius: 10px;
-}
-.single_review div {
-  margin-bottom: 20px;
+.swiper-slide p::before{
+  content: "\f10d";
+    font-family: 'Fontawesome';
+    font-size: 50px;
 }
 
+
 @media screen and (max-width: 1200px) {
-  .review {
-    padding: 5%;
-  }
   .review_container {
-    gap: 1rem;
+      padding: 5% 20%;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .review_container {
-    gap: 1rem;
-    grid-template-columns: 1fr;
+      padding: 10%;
   }
 }
 @media screen and (max-width: 576px) {
-  .review_email,
-  .review_name,
-  .review_comment,
-  .review_rating {
-    grid-template-columns: 1fr;
-    gap: 0.5rem;
+    .swiper-slide p::before{
+      font-size: 35px;
   }
-  .review_rating select {
-    width: 100%;
+  .review_container h1{
+    font-size: 30px;
+    margin-bottom: 30px;
   }
 }
