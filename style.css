@@ -10,7 +10,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 img {
@@ -111,7 +111,6 @@ body {
   }
 }
 @media (max-width: 940px) {
- 
   .nav {
     width: 100%;
     padding: 5%;
@@ -231,7 +230,7 @@ body {
 .top-hero_btn {
   margin: 20px 0;
 }
-.top-hero_btn button{
+.top-hero_btn button {
   padding: 10px 20px;
   color: #fff;
   font-size: 16px;
@@ -359,9 +358,6 @@ body {
   /* letter-spacing: 5px; */
 }
 
-
-
-
 /*All Animations*/
 
 .fade-in {
@@ -393,10 +389,6 @@ body {
   -webkit-transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out;
 }
-
-
-
-
 
 @media screen and (max-width: 1200px) {
   .product {
@@ -776,11 +768,11 @@ body {
   border: none;
   outline: none;
 }
-.claim_name button:hover{
+.claim_name button:hover {
   background-color: #c0272c;
 }
-.claim_sec button:active{
-transform: scale(0.9);
+.claim_sec button:active {
+  transform: scale(0.9);
 }
 
 .product_bought {
@@ -823,7 +815,7 @@ transform: scale(0.9);
   color: #fff;
   cursor: pointer;
 }
-.claim_single_product .warranty_claim:hover{
+.claim_single_product .warranty_claim:hover {
   background-color: #c0272c;
 }
 @media screen and (max-width: 576px) {
@@ -943,7 +935,7 @@ transform: scale(0.9);
     grid-gap: 2rem;
   }
 }
-@media screen and (max-width: 940px){
+@media screen and (max-width: 940px) {
   .contact_us {
     padding: 120px 0 0 0;
   }
@@ -1062,16 +1054,16 @@ transform: scale(0.9);
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
 }
-.footer_about a:hover{
+.footer_about a:hover {
   text-decoration: underline;
   color: #c0272c;
 }
-.footer_about > div{
+.footer_about > div {
   display: flex;
   gap: 1rem;
   font-size: 25px;
 }
-.footer_about > div a:hover{
+.footer_about > div a:hover {
   text-decoration: none;
 }
 @media screen and (max-width: 1200px) {
@@ -1262,8 +1254,7 @@ tr:nth-child(even) {
   background-color: #c0272cc5;
 }
 
-
-@media screen and (max-width: 940px){
+@media screen and (max-width: 940px) {
   .warranty_form {
     padding: 120px 10% 0 10%;
   }
@@ -1297,26 +1288,25 @@ tr:nth-child(even) {
   margin: 5% 0;
 }
 .review_container {
-  background-image: url('./images/testimonial.jpg');
+  background-image: url("./images/testimonial.jpg");
   background-size: contain;
-    background-attachment: fixed;
-    background-size: 100%;
-    padding: 5% 30%;
+  background-attachment: fixed;
+  background-size: 100%;
+  padding: 5% 30%;
 }
-.review_container h1{
+.review_container h1 {
   text-align: center;
   margin-bottom: 50px;
- font-size: 40px;
- color: #fff; 
- font-family: Arial, Helvetica, sans-serif;
- 
+  font-size: 40px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.review_container h1 hr{
+.review_container h1 hr {
   width: 100px;
   margin: 0 auto;
-  margin-top: 10px; 
+  margin-top: 10px;
 }
-.swiper-slide{
+.swiper-slide {
   background-color: transparent !important;
   display: grid !important;
   justify-items: center;
@@ -1324,34 +1314,33 @@ tr:nth-child(even) {
   user-select: none;
   color: #fff;
 }
-.swiper-slide img{
+.swiper-slide img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   object-fit: cover;
 }
-.swiper-slide p::before{
+.swiper-slide p::before {
   content: "\f10d";
-    font-family: 'Fontawesome';
-    font-size: 50px;
+  font-family: "Fontawesome";
+  font-size: 50px;
 }
-
 
 @media screen and (max-width: 1200px) {
   .review_container {
-      padding: 5% 20%;
+    padding: 5% 20%;
   }
 }
 @media screen and (max-width: 768px) {
   .review_container {
-      padding: 10%;
+    padding: 10%;
   }
 }
 @media screen and (max-width: 576px) {
-    .swiper-slide p::before{
-      font-size: 35px;
+  .swiper-slide p::before {
+    font-size: 35px;
   }
-  .review_container h1{
+  .review_container h1 {
     font-size: 30px;
     margin-bottom: 30px;
   }

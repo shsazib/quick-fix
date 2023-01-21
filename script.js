@@ -66,12 +66,8 @@ $(".nav_ul a").click(function () {
   );
 });
 
-
-
-
-
 // scroll animation
-    $(window).scroll(function () {
+$(window).scroll(function () {
   //Fade-in
   $(".fade-in").each(function () {
     if (isScrolledIntoView($(this))) {
