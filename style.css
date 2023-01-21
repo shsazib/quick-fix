@@ -781,7 +781,7 @@ body {
 
 /* contact us */
 .contact_us {
-  padding: 50px 0;
+  padding: 50px 0 0 0;
 }
 .quick_fix_map iframe {
   width: 100%;
@@ -882,6 +882,11 @@ body {
   .contact_info {
     padding: 5%;
     grid-gap: 2rem;
+  }
+}
+@media screen and (max-width: 940px){
+  .contact_us {
+    padding: 120px 0 0 0;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1187,9 +1192,15 @@ tr:nth-child(even) {
   background-color: #c0272cc5;
 }
 
+
+@media screen and (max-width: 940px){
+  .warranty_form {
+    padding: 120px 10% 0 10%;
+  }
+}
 @media screen and (max-width: 576px) {
   .warranty_form {
-    padding: 2% 5%;
+    padding: 120px 5% 0 5%;
   }
   .file_img,
   .warranty_submit_btn,
