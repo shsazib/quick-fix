@@ -228,6 +228,19 @@ body {
   cursor: pointer;
   transition: 0.5s;
 }
+.top-hero_btn {
+  margin: 20px 0;
+}
+.top-hero_btn button{
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #c0272c;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
 @media (max-width: 1200px) {
   .hero_content {
     width: 80%;
@@ -730,6 +743,7 @@ body {
   background-color: #000;
   color: #fff;
   cursor: pointer;
+  transition: 0.2s;
 }
 
 .claim_info {
@@ -760,6 +774,12 @@ body {
   cursor: pointer;
   border: none;
   outline: none;
+}
+.claim_name button:hover{
+  background-color: #c0272c;
+}
+.claim_sec button:active{
+transform: scale(0.9);
 }
 
 .product_bought {
@@ -802,7 +822,9 @@ body {
   color: #fff;
   cursor: pointer;
 }
-
+.claim_single_product .warranty_claim:hover{
+  background-color: #c0272c;
+}
 @media screen and (max-width: 576px) {
   .side_modal-content {
     width: 90%;
@@ -916,7 +938,7 @@ body {
 
 @media screen and (max-width: 1200px) {
   .contact_info {
-    padding: 5%;
+    padding: 10% 5%;
     grid-gap: 2rem;
   }
 }
@@ -936,7 +958,7 @@ body {
 
 /* about us */
 .about_us {
-  background: linear-gradient(#fff, #c0272c1f);
+  background: #fff;
   padding: 5% 10%;
 }
 
@@ -1039,7 +1061,18 @@ body {
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+.footer_about a:hover{
+  text-decoration: underline;
+  color: #c0272c;
+}
+.footer_about > div{
+  display: flex;
+  gap: 1rem;
+  font-size: 25px;
+}
+.footer_about > div a:hover{
+  text-decoration: none;
+}
 @media screen and (max-width: 1200px) {
   .footer_container {
     padding: 5%;
