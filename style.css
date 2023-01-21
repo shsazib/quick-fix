@@ -348,6 +348,45 @@ body {
   /* letter-spacing: 5px; */
 }
 
+
+
+
+/*All Animations*/
+
+.fade-in {
+  opacity: 0;
+  visibility: hidden;
+
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.fade-in-right {
+  opacity: 0;
+  visibility: hidden;
+
+  -webkit-transform: translateX(150px);
+  transform: translateX(150px);
+
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+.fade-in-left {
+  opacity: 0;
+  visibility: hidden;
+
+  -webkit-transform: translateX(-150px);
+  transform: translateX(-150px);
+
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+
+
+
+
 @media screen and (max-width: 1200px) {
   .product {
     background-color: #dee6e9;

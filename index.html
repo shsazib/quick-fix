@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- aos -->
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
 </head>
 
 <body>
@@ -38,15 +36,15 @@
         <!-- hero section -->
         <div class="hero_section" id="home">
             <div class="hero_content">
-                <img data-aos="fade-right" data-aos-duration="500" src="./images/model_product.png" alt="product">
+                <img  src="./images/model_product.png" alt="product" >
                 <div class="hero_text_content">
-                    <h5 data-aos="fade-left" data-aos-duration="500">performance</h5>
-                    <h1 data-aos="fade-left" data-aos-duration="600">Everything Motorsport</h1>
-                    <p data-aos="fade-left" data-aos-duration="800">Lorem ipsum dolor sit amet, copy the following link
+                    <h5 class="fade-in-right" style="transition: 0.4s;">performance</h5>
+                    <h1 class="fade-in-right" style="transition: 0.6s;">Everything Motorsport</h1>
+                    <p class="fade-in-right" style="transition: 0.8s;">Lorem ipsum dolor sit amet, copy the following link
                         into the website you'll use this resource on.
                         If you want to know more, read the cons adipiscing elit. Morbi obortis ligula euismod sed am
                         augue nisl.</p>
-                    <div class="hero_btn" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="hero_btn fade-in-right" style="transition: 1s;">
                         <div></div>
                         <button>Buy Now</button>
                         <i class="fa-sharp fa-solid fa-play"></i>
@@ -57,31 +55,31 @@
         </div>
 
 
-
+=
 
         <!-- main product -->
         <div class="product" id="product">
-            <div class="product_title">
+            <div class="product_title fade-in">
                 <h1>TRY PROFESSIONAL <br> EQUIPMENT</h1>
                 <h5>PERFORMANCE</h5>
             </div>
             <div class="main_product">
                 <div class="product_des_1">
-                    <div class="p_description" data-aos="fade-right" data-aos-duration="200">
+                    <div class="p_description fade-in-left" style="transition: 0.4s;">
                         <div>
                             <h2>FRONT SUSPENSION</h2>
                             <p>Aliquam lorem ante, daibus in, viera quis, feugiat hasell. Etiam ultricies nisi vel.</p>
                         </div>
                         <h1>01</h1>
                     </div>
-                    <div class="p_description" data-aos="fade-right" data-aos-duration="300">
+                    <div class="p_description fade-in-left" style="transition: 0.6s;">
                         <div>
                             <h2>TRANSMISSION</h2>
                             <p>Aliquam lorem ante, daibus in, viera quis, feugiat hasell. Etiam ultricies nisi vel.</p>
                         </div>
                         <h1>02</h1>
                     </div>
-                    <div class="p_description" data-aos="fade-right" data-aos-duration="500">
+                    <div class="p_description fade-in-left" style="transition: 0.8s;">
                         <div>
                             <h2>NEW BRAKES</h2>
                             <p>Aliquam lorem ante, daibus in, viera quis, feugiat hasell. Etiam ultricies nisi vel.</p>
@@ -89,25 +87,25 @@
                         <h1>03</h1>
                     </div>
                 </div>
-                <div class="main_product_img" data-aos="zoom-in" data-aos-duration="500">
+                <div class="main_product_img">
                     <img src="./images/model_product_img.png" alt="product">
                 </div>
                 <div class="product_des_2">
-                    <div class="p_description_2" data-aos="fade-left" data-aos-duration="200">
+                    <div class="p_description_2 fade-in-right" style="transition: 0.4s;">
                         <h1>04</h1>
                         <div>
                             <h2>NEW CLUTCH</h2>
                             <p>Aliquam lorem ante, daibus in, viera quis, feugiat hasell. Etiam ultricies nisi vel.</p>
                         </div>
                     </div>
-                    <div class="p_description_2" data-aos="fade-left" data-aos-duration="300">
+                    <div class="p_description_2 fade-in-right" style="transition: 0.6s;">
                         <h1>05</h1>
                         <div>
                             <h2>TRACTION MANAGEMENT</h2>
                             <p>Aliquam lorem ante, daibus in, viera quis, feugiat hasell. Etiam ultricies nisi vel.</p>
                         </div>
                     </div>
-                    <div class="p_description_2" data-aos="fade-left" data-aos-duration="500">
+                    <div class="p_description_2 fade-in-right" style="transition: 0.8s;">
                         <h1>06</h1>
                         <div>
                             <h2>BACK SUSPENSION</h2>
@@ -116,6 +114,21 @@
                     </div>
                 </div>
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             <!-- phone product -->
             <div class="phone_main_product">
@@ -462,13 +475,8 @@
             </div>
         </div>
 
-
-
-        <!-- aos -->
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
+<!-- animation -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
         <!-- jquery -->
         <script src="https://code.jquery.com/jquery-3.6.3.min.js"
