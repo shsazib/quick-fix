@@ -66,7 +66,7 @@ body {
   font-weight: 500;
   padding: 12px 13px;
   transition: 0.3s;
-  font-family: "Montserrat", sans-serif;
+  font-family: gidole;
 }
 .nav_ul li a:hover {
   background-color: #c0272c;
@@ -477,7 +477,7 @@ body {
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: gidole;
   font-size: 16px;
 }
 
@@ -536,7 +536,7 @@ body {
   -webkit-transition: all 0.25s ease;
   -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: gidole;
 }
 
 .retailers_submenu a:hover {
@@ -557,7 +557,7 @@ body {
 }
 .cus_information,
 .cus_address p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: gidole;
   font-size: 14px;
   margin-bottom: 10px;
 }
@@ -649,7 +649,7 @@ body {
   outline: none;
   border: none;
   border-radius: 5px;
-  font-family: cursive;
+  font-family: gidole;
   z-index: 10;
 }
 
@@ -732,7 +732,7 @@ body {
   outline: none;
   padding: 10px 20px;
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: gidole;
   font-size: 16px;
   background-color: #000;
   color: #fff;
@@ -761,7 +761,7 @@ body {
   width: 100px;
   height: 40px;
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: gidole;
   font-size: 14px;
   background-color: #000;
   color: #fff;
@@ -780,7 +780,7 @@ body {
   background-color: #c0272c;
   padding: 15px 10px;
   color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: gidole;
 }
 .claim_single_product {
   display: grid;
@@ -790,7 +790,7 @@ body {
   margin: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: gidole;
   font-size: 14px;
 }
 .claim_single_product:hover {
@@ -854,11 +854,11 @@ max-width: 150px;
   max-height: 500px;
 }
 .contact_info {
-  padding: 5% 10%;
+  padding: 5% 25%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 4rem;
-  background-color: #c0272c;
+  background-color: #c62248;
 }
 .contact_address {
   display: grid;
@@ -913,9 +913,9 @@ max-width: 150px;
   outline: none;
   width: 100%;
   font-size: 16px;
-  background-color: #c0272c;
+  /* background-color: #c0272c; */
   padding: 10px;
-  color: #fff;
+  color: #000;
 }
 .contact_mail p {
   font-family: gidole;
@@ -1048,7 +1048,7 @@ max-width: 150px;
 }
 .footer_container h2,
 .footer_container p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: gidole;
 }
 .footer_about,
 .footer_address,
@@ -1062,12 +1062,12 @@ max-width: 150px;
   display: grid;
   justify-items: center;
 }
-.footer_about img {
+.footer_about_logo {
   width: 300px;
 }
 .footer_about a {
   color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: gidole;
 }
 .footer_about a:hover {
   text-decoration: underline;
@@ -1080,6 +1080,10 @@ max-width: 150px;
 }
 .footer_about > div a:hover {
   text-decoration: none;
+}
+.footer_fb .img {
+  width: 150px ;
+  transition: 0.2s;
 }
 @media screen and (max-width: 1200px) {
   .footer_container {
@@ -1107,7 +1111,7 @@ max-width: 150px;
   .footer_location img {
     width: 50%;
   }
-  .footer_about img {
+  .footer_about>img:nth-child(1) {
     width: 250px;
   }
   .footer_container h2 {
@@ -1130,7 +1134,7 @@ max-width: 150px;
   font-size: 40px;
 }
 table {
-  font-family: arial, sans-serif;
+  font-family: gidole;
   border-collapse: collapse;
   width: 100%;
   margin: 30px auto;
@@ -1159,6 +1163,9 @@ tr:nth-child(even) {
   display: grid;
   gap: 0.5rem;
 }
+.warranty_detalis textarea:focus, .odo_input input:focus{
+  border: 1px solid #c62248;
+}
 .odo_input input {
   width: 100%;
   border: 1px solid #ddd;
@@ -1168,7 +1175,7 @@ tr:nth-child(even) {
 .odo_input p,
 .warranty_detalis p,
 .warranty_img_input p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: gidole;
 }
 .warranty_detalis textarea {
   width: 100%;
@@ -1249,7 +1256,7 @@ tr:nth-child(even) {
   outline: none;
   padding: 12px 30px;
   cursor: pointer;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: gidole;
   font-weight: 600;
   font-size: 16px;
   border-radius: 5px;
@@ -1303,18 +1310,33 @@ tr:nth-child(even) {
   margin: 5% 0;
 }
 .review_container {
-  background-image: url("./images/testimonial.jpg");
+  background-image: url("./images/client-bg.jpg");
   background-size: contain;
   background-attachment: fixed;
   background-size: 100%;
   padding: 5% 30%;
+  position: relative;
+  z-index: 1;
+}
+.review_container::after {
+  content: '';
+  display: block;
+  backdrop-filter: blur(5px);
+  background: #0003;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .review_container h1 {
   text-align: center;
   margin-bottom: 50px;
   font-size: 40px;
   color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: american;
+  font-weight: 400;
 }
 .review_container h1 hr {
   width: 100px;
