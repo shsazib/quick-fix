@@ -49,9 +49,8 @@
                     <label for="Vehicle"><label for="">Select Your Vehicle Type <span class="red">*</span></label>
                         <!-- <input id="Vehicle" placeholder="Vehicle " class="" /> -->
                         <select name="" id="">
-                            <option value="">Dhaka</option>
-                            <option value="">Feni</option>
-                            <option value="">Cumilla</option>
+                            <option value="">Motorcycle</option>
+                            <option value="">Car</option>
                         </select>
                 </div>
                 <div class="verify_name">
