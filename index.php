@@ -9,9 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/x-icon" href="./images/x-icon.png">
     <!-- font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
     <!-- Link Swiper's CSS -->
@@ -20,7 +18,7 @@
 
 <body>
     <nav class="nav">
-        <a href="./index.html" class="brand_logo">
+        <a href="./index.php" class="brand_logo">
             <img src="./images/Sign Board Print.png" alt="logo">
         </a>
         <input type="checkbox" id="check">
@@ -47,7 +45,7 @@
                     Tire Sealant</h1>
                 <p>It has Nano Web Technology formula which can fix tire punctures instantly & permanently. Also it has
                     Anti-Rust & Anti Burst formula to protect your tire from rust & burst.</p>
-                    <br>
+                <br>
                 <a href="https://www.facebook.com/QuickfixGlobal" target="_blank" class="top-hero_btn">
                     <button>Buy Now</button>
                 </a>
@@ -228,8 +226,7 @@
                 </ul>
             </div>
             <div class="cus_container">
-                <div class="cus_information "
-                    map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.8688621440306!2d90.4099219348877!3d23.858790000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c5d570268b39%3A0xf8db4a1101406613!2sMy%20Choice%20My%20One!5e0!3m2!1sen!2sbd!4v1672496893170!5m2!1sen!2sbd">
+                <div class="cus_information " map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.8688621440306!2d90.4099219348877!3d23.858790000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c5d570268b39%3A0xf8db4a1101406613!2sMy%20Choice%20My%20One!5e0!3m2!1sen!2sbd!4v1672496893170!5m2!1sen!2sbd">
                     <div class="all_cus_info">
                         <img src="https://picsum.photos/200/200" alt="img">
                         <div class="cus_address">
@@ -258,10 +255,7 @@
 
                 <div class="cus_map">
                     <div className="google_map">
-                        <iframe id="map"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.8688621440306!2d90.4099219348877!3d23.858790000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c5d570268b39%3A0xf8db4a1101406613!2sMy%20Choice%20My%20One!5e0!3m2!1sen!2sbd!4v1672496893170!5m2!1sen!2sbd"
-                            width="100%" height="450" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.8688621440306!2d90.4099219348877!3d23.858790000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c5d570268b39%3A0xf8db4a1101406613!2sMy%20Choice%20My%20One!5e0!3m2!1sen!2sbd!4v1672496893170!5m2!1sen!2sbd" width="100%" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
@@ -301,8 +295,7 @@
                                 <p class="product_bought">Products you have bought </p>
                                 <div class="claim_all_product">
                                     <div class="claim_single_product">
-                                        <img src="./images/female-business-owner-is-using-laptop_53876-48755.webp"
-                                            alt="">
+                                        <img src="./images/female-business-owner-is-using-laptop_53876-48755.webp" alt="">
                                         <div class="claim_single_product_content">
                                             <div>
                                                 <p><b>Product ID</b></p>
@@ -313,12 +306,11 @@
                                                 <p>12/10/2013</p>
                                                 <p>at 12:20:52 pm</p>
                                             </div>
-                                            <a href="./warranty-form.html" class="warranty_claim">CLAIM</a>
+                                            <a href="./warranty-form.php" class="warranty_claim">CLAIM</a>
                                         </div>
                                     </div>
                                     <div class="claim_single_product">
-                                        <img src="./images/female-business-owner-is-using-laptop_53876-48755.webp"
-                                            alt="">
+                                        <img src="./images/female-business-owner-is-using-laptop_53876-48755.webp" alt="">
                                         <div class="claim_single_product_content">
                                             <div>
                                                 <p><b>Product ID</b></p>
@@ -329,11 +321,11 @@
                                                 <p>12/10/2013</p>
                                                 <p>at 12:20:52 pm</p>
                                             </div>
-                                            <a href="./warranty-form.html" class="warranty_claim">CLAIM</a>
+                                            <a href="./warranty-form.php" class="warranty_claim">CLAIM</a>
                                         </div>
-                                    </div><div class="claim_single_product">
-                                        <img src="./images/female-business-owner-is-using-laptop_53876-48755.webp"
-                                            alt="">
+                                    </div>
+                                    <div class="claim_single_product">
+                                        <img src="./images/female-business-owner-is-using-laptop_53876-48755.webp" alt="">
                                         <div class="claim_single_product_content">
                                             <div>
                                                 <p><b>Product ID</b></p>
@@ -344,11 +336,11 @@
                                                 <p>12/10/2013</p>
                                                 <p>at 12:20:52 pm</p>
                                             </div>
-                                            <a href="./warranty-form.html" class="warranty_claim">CLAIM</a>
+                                            <a href="./warranty-form.php" class="warranty_claim">CLAIM</a>
                                         </div>
-                                    </div><div class="claim_single_product">
-                                        <img src="./images/female-business-owner-is-using-laptop_53876-48755.webp"
-                                            alt="">
+                                    </div>
+                                    <div class="claim_single_product">
+                                        <img src="./images/female-business-owner-is-using-laptop_53876-48755.webp" alt="">
                                         <div class="claim_single_product_content">
                                             <div>
                                                 <p><b>Product ID</b></p>
@@ -359,7 +351,7 @@
                                                 <p>12/10/2013</p>
                                                 <p>at 12:20:52 pm</p>
                                             </div>
-                                            <a href="./warranty-form.html" class="warranty_claim">CLAIM</a>
+                                            <a href="./warranty-form.php" class="warranty_claim">CLAIM</a>
                                         </div>
                                     </div>
                                 </div>
@@ -413,8 +405,7 @@
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="./images/coders-discussing-about-source-code-compiling-discovers-errors-asks-rest-team-explanations-front-multiple-screens-running-algorithms-software-developers-doing-teamwork_482257-41856.webp"
-                            alt="">
+                        <img src="./images/coders-discussing-about-source-code-compiling-discovers-errors-asks-rest-team-explanations-front-multiple-screens-running-algorithms-software-developers-doing-teamwork_482257-41856.webp" alt="">
                         <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo hic obcaecati iste facere,
                             mollitia earum placeat consequatur quia! Ipsam eum perspiciatis explicabo delectus repellat,
                             recusandae magnam placeat non commodi ab?</p>
@@ -448,8 +439,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="./images/coders-discussing-about-source-code-compiling-discovers-errors-asks-rest-team-explanations-front-multiple-screens-running-algorithms-software-developers-doing-teamwork_482257-41856.webp"
-                            alt="">
+                        <img src="./images/coders-discussing-about-source-code-compiling-discovers-errors-asks-rest-team-explanations-front-multiple-screens-running-algorithms-software-developers-doing-teamwork_482257-41856.webp" alt="">
                         <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo hic obcaecati iste facere,
                             mollitia earum placeat consequatur quia! Ipsam eum perspiciatis explicabo delectus repellat,
                             recusandae magnam placeat non commodi ab?</p>
@@ -466,8 +456,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="./images/contemporary-designers-looking-whiteboard-while-their-colleague-making-presentation_274679-20882.avif"
-                            alt="">
+                        <img src="./images/contemporary-designers-looking-whiteboard-while-their-colleague-making-presentation_274679-20882.avif" alt="">
                         <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo hic obcaecati iste facere,
                             mollitia earum placeat consequatur quia! Ipsam eum perspiciatis explicabo delectus repellat,
                             recusandae magnam placeat non commodi ab?</p>
@@ -515,9 +504,7 @@
         </div>
         <div class="about_container">
 
-            <img class="about_container_img"
-                src="./images/coders-discussing-about-source-code-compiling-discovers-errors-asks-rest-team-explanations-front-multiple-screens-running-algorithms-software-developers-doing-teamwork_482257-41856.webp"
-                alt="">
+            <img class="about_container_img" src="./images/coders-discussing-about-source-code-compiling-discovers-errors-asks-rest-team-explanations-front-multiple-screens-running-algorithms-software-developers-doing-teamwork_482257-41856.webp" alt="">
 
             <div class="about_text">
                 <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
@@ -543,15 +530,15 @@
     <div class="footer_container">
         <div class="footer_about">
             <img class="footer_about_logo" src="./images/Quickfix-Logo.png" alt="img">
-            <a href="./contact-us.html">
+            <a href="./contact-us.php">
                 Contact Us
             </a>
-            <a href="./warranty-policy.html">Warranty Policy</a>
-            <a href="./privacy-policy.html">Privacy Policy</a>
-            <a href="./career.html">Career</a>
+            <a href="./warranty-policy.php">Warranty Policy</a>
+            <a href="./privacy-policy.php">Privacy Policy</a>
+            <a href="./career.php">Career</a>
             <div class="footer_fb">
                 <a href="https://www.facebook.com/QuickfixGlobal" target="_blank">
-                    <img class="img" src="./images/facebook-footer.png" alt="img" >
+                    <img class="img" src="./images/facebook-footer.png" alt="img">
                 </a>
             </div>
         </div>
@@ -559,7 +546,8 @@
             <h2>CORPORATE OFFICE IN DHAKA</h2>
             <div>
                 <i class="fa-solid fa-location-dot"></i>
-                <p>2nd Floor, Ka/32/5/A (Palash Tower), Pragati Sarani (Shahjadpur), Gulshan, Dhaka-1212, Bangladesh.</p>
+                <p>2nd Floor, Ka/32/5/A (Palash Tower), Pragati Sarani (Shahjadpur), Gulshan, Dhaka-1212, Bangladesh.
+                </p>
             </div>
             <div>
                 <i class="fa-solid fa-phone"></i>
@@ -606,14 +594,13 @@
         });
     </script>
     <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <!-- js -->
 
     <script src="./script.js"></script>
 
     <script>
-        $('.cus_information').click(function () {
+        $('.cus_information').click(function() {
             let map = $(this).attr('map');
             $('#map').attr('src', map);
         });

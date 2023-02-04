@@ -16,7 +16,7 @@
 
 <body>
     <nav class="nav">
-        <a href="./index.html" class="brand_logo">
+        <a href="./index.php" class="brand_logo">
             <img src="./images/Sign Board Print.png" alt="logo">
         </a>
         <input type="checkbox" id="check">
@@ -24,11 +24,11 @@
             <i class="fas fa-bars"></i>
         </label>
         <ul class="nav_ul">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html">Product</a></li>
-            <li><a href="index.html">Outlets</a></li>
-            <li><a href="index.html">Review</a></li>
-            <li><a href="index.html">About Us</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="index.php">Product</a></li>
+            <li><a href="index.php">Outlets</a></li>
+            <li><a href="index.php">Review</a></li>
+            <li><a href="index.php">About Us</a></li>
         </ul>
     </nav>
 
@@ -46,12 +46,12 @@
            <div class="footer_container">
             <div class="footer_about">
                 <img class="footer_about_logo" src="./images/Quickfix-Logo.png" alt="img">
-                <a href="./contact-us.html">
+                <a href="./contact-us.php">
                     Contact Us
                 </a>
-                <a href="./warranty-policy.html">Warranty Policy</a>
-                <a href="./privacy-policy.html">Privacy Policy</a>
-                <a href="./career.html">Career</a>
+                <a href="./warranty-policy.php">Warranty Policy</a>
+                <a href="./privacy-policy.php">Privacy Policy</a>
+                <a href="./career.php">Career</a>
                 <div class="footer_fb">
                     <a href="https://www.facebook.com/QuickfixGlobal" target="_blank">
                         <img class="img" src="./images/facebook-footer.png" alt="img" >
