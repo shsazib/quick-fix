@@ -32,47 +32,85 @@
 
 
 
+    <main role="main">
 
-    <div class="verify_section">
-        <div class="verify_title">
-            <h1>VERIFY YOUR PRODUCT</h1>
-            <p>Please fill in the form below and submit for verification. You should see a verification success message
-                if this is original quickfix.</p>
+<!--<img src="img/quickfixverify.jpg" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 verify2 contentmiddle">
+      <div class="contentmiddle">
+        <div class="column mcb-column one column_column  column-margin-20px">
+          <div class="column_attr clearfix" style="">
+            <h2>VERIFY YOUR PRODUCT</h2>
+            <p class="big">Please fill in the form below and submit for verification. You should see a verification success message if this is original quickfix.</p>
+          </div>
         </div>
-        <form class="verify_info">
-            <div class="verify_p_id">
-                <label for="p_id">Product ID <span class="red">*</span></label>
-                <input id="p_id" placeholder="Enter Your Product ID " />
-            </div>
-            <div class="verify_vehicle_name">
-                <div class="verify_vehicle">
-                    <label for="Vehicle"><label for="">Select Your Vehicle Type <span class="red">*</span></label>
-                        <!-- <input id="Vehicle" placeholder="Vehicle " class="" /> -->
-                        <select name="" id="">
-                            <option value="">Motorcycle</option>
-                            <option value="">Car</option>
-                        </select>
-                </div>
-                <div class="verify_name">
-                    <label for="name">Name <span class="red">*</span></label>
-                    <input id="name" placeholder="Name " class="" />
-                </div>
-            </div>
-            <div class="verify_email">
-                <label for="email">Email</label>
-                <input id="email" placeholder="Your Email " class="" />
-            </div>
-            <div class="verify_todo">
-                <label for="todo">Current TODO</label>
-                <input id="todo" placeholder="How many KM did your vehicle run so far?" class="" />
-            </div>
-            <div class="verify_phone">
-                <label for="phone">Phone Number <span class="red">*</span></label>
-                <input id="phone" placeholder="+8801XXXXXXXXX" class="" />
-            </div>
-            <button type="submit" class="verify_submit_btn">Submit</button>
-        </form>
+        <div class="column mcb-column one-second column_column  column-margin-">
+          <div class="column_attr clearfix" style="">
+
+
+
+
+          </div>
+        </div>
+
+      </div>
+
+
     </div>
+
+    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 verify">
+      <form id="verificationForm" action="#">
+        <fieldset disabled>
+          <div class="form-group">
+            <label for="productid">Product ID</label>
+            <input type="text" class="form-control" readonly id="productid" value="<?php echo $_GET['code']; ?>" required>
+          </div>
+        </fieldset>
+
+        <div class="form-row form-inline">
+          <div class="form-group col-md-6">
+            <label class="mr-sm-2" for="vehicletype">Select your Vehicle Type*</label>
+            <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="vehicletype">
+              <option value="MOTORCYCLE">Motorcycle</option>
+              <option value="CAR">Car</option>
+            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="verifyname">Name*</label>
+            <input type="text" class="form-control" id="verifyname" placeholder="Name" required>
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          <label for="inputemailverify">Email</label>
+          <input type="email" class="form-control" id="inputemailverify" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <label for="inputODO">Current ODO</label>
+          <input type="number" class="form-control" id="inputODO" required placeholder="How many KM did your vehicle run so far?">
+        </div>
+        <div class="form-group">
+          <label for="mobileinputverify">Mobile*</label>
+          <input type="text" class="form-control" id="mobileinputverify" placeholder="+8801XXXXXXXXX" required>
+        </div>
+
+
+
+        <div style="text-align: center;">
+          <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Submit</button>
+        </div>
+      </form>
+
+    </div><!-- /.adv -->
+
+  </div>
+
+
+
+</div><!-- /.container -->
+
 
 
 
@@ -116,8 +154,135 @@
 
 
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.0.0/sweetalert2.all.min.js"></script>
+<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.0.0/sweetalert2.all.min.js"></script>
     <script src="./script.js"></script>
+
+    <script type="text/javascript">
+        $(window).bind("load", function() {
+            jQuery("#overlay").fadeOut();
+        });
+        jQuery(document).ready(function() {
+            jQuery("#verificationForm").submit(function(e) {
+                e.preventDefault();
+                var data = {
+                    code: jQuery('#productid').val().trim(),
+                    vehicle_type: jQuery('#vehicletype').val().trim(),
+                    name: jQuery('#verifyname').val().trim(),
+                    phone_no: jQuery('#mobileinputverify').val().trim(),
+                    odo: jQuery('#inputODO').val().trim(),
+                }
+                var email = jQuery('#inputemailverify').val().trim();
+                if (email.length > 0) {
+                    data.email = email;
+                }
+
+                var request = jQuery.ajax({
+                    url: 'http://api.quickfixglobal.com/api/verify',
+                    method: 'POST',
+                    dataType: 'json',
+                    data: data
+                });
+
+                request.done(function(response) {
+                    console.log(response);
+                    if (response.response.result === 'success') {
+                        swal(
+                            'Congratulations!!!',
+                            response.response.message,
+                            'success'
+                        )
+                    }
+                })
+
+                request.fail(function(jqXHR, textStatus) {
+                    swal(
+                        'Oops!',
+                        jqXHR.responseJSON.response.errors.code + '. Please reach our customer support at <a href="tel:+8801633222211">+88 018 33 39 50 13</a>',
+                        'error'
+                    );
+
+
+                });
+            });
+            jQuery("#clubForm").submit(function(e) {
+                e.preventDefault();
+                var data = {
+                    phone_number: jQuery('#mobileinputverify').val().trim(),
+                }
+
+                var request = jQuery.ajax({
+                    url: 'http://api.quickfixglobal.com/api/verify-customer',
+                    method: 'POST',
+                    dataType: 'json',
+                    data: data
+                });
+
+                request.done(function(response) {
+                    console.log(response);
+                    if (response.response.result === 'success') {
+                        swal(
+                            'Congratulations!!!',
+                            response.response.message,
+                            'success'
+                        )
+                    }
+                })
+
+                request.fail(function(jqXHR, textStatus) {
+                    swal(
+                        'Oops!',
+                        jqXHR.responseJSON.response.errors.code + '. Please reach our customer support at <a href="tel:+8801833395013">+88 016 33 22 22 11</a>',
+                        'error'
+                    );
+
+
+                });
+            });
+
+            jQuery("#contactForm").submit(function(e) {
+                e.preventDefault();
+                var data = {
+                    first_name: jQuery('#first_name').val(),
+                    last_name: jQuery('#last_name').val(),
+                    contact_email: jQuery('#contact_email').val(),
+                    message: jQuery('#message').val(),
+                    contact_phone_no: jQuery('#contact_no').val(),
+                }
+
+                var request = jQuery.ajax({
+                    url: 'http://api.quickfixglobal.com/api/contact/message/send',
+                    method: 'POST',
+                    dataType: 'json',
+                    data: data
+                });
+
+                request.done(function(response) {
+                    console.log(response);
+                    if (response.response.result === 'success') {
+                        swal(
+                            'Congratulations!!!',
+                            response.response.message,
+                            'success'
+                        )
+                    }
+                })
+
+                request.fail(function(jqXHR, textStatus) {
+                    swal(
+                        'Oops!',
+                        'Something went wrong at our end. Please reach our customer support at <a href="tel:+8801633222211">+88 016 33 22 22 11</a>. We are really sorry for the inconvenience.',
+                        'error'
+                    );
+
+
+                });
+            });
+        })
+    </script>
 </body>
 
 </html>
